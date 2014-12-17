@@ -1,0 +1,9 @@
+<h1>Cool Bikeshop</h1>
+
+<ul>
+	<% @bikes.each do |b| %>
+		<li>
+			<strong><%= b.name %></strong> <%= b.brand %> <%= b.speed %>
+		</li>
+	<% end %>
+</ul>
